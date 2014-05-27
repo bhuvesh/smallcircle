@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( viscirc )
+find_package( OpenCV REQUIRED )
+add_executable( viscirc viscirc.cpp )
+target_link_libraries( viscirc ${OpenCV_LIBS} )
